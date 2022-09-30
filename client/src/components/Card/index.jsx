@@ -25,8 +25,3 @@ export default function DogCard({ id, name, image, temperament, weight }) {
     </div>
   );
 }
-
-/* magen
-Nombre
-Temperamento
-Peso */

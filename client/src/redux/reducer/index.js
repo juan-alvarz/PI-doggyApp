@@ -76,8 +76,8 @@ function rootReducer(state = initialState, action) {
       const allDoggys = state.allDogs;
       const filterCreated =
         action.payload === "created"
-          ? allDoggys.filter((p) => p.created)
-          : allDoggys.filter((p) => !p.created);
+          ? allDoggys.filter((p) => p.from === "DB")
+          : allDoggys.filter((p) => p.from === "API");
       return {
         ...state,
         dogs: action.payload === "All" ? state.allDogs : filterCreated,

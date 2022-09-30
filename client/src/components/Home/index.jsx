@@ -200,9 +200,9 @@ export default function Home() {
         <div className="container-dogs-cards">
           {currentDogs?.map((p) => {
             return (
-              <div className="single-home-card" key={p.id}>
+              <div className="single-home-card" key={p._id}>
                 <DogCard
-                  id={p.id}
+                  id={p._id}
                   name={p.name}
                   image={p.image}
                   temperament={p.temperament}
